@@ -199,6 +199,11 @@ determine the exact padding."
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-inactive)))
    (mode-line-emphasis :foreground (if -modeline-bright base8 highlight))
 
+   ;; Joe stuff
+   ;; (hl-line :background "#e4ddd2")
+   (org-block :background fw-base6)
+   (org-block-begin-line :foreground base3 :background fw-base6)
+
    ;;;; centaur-tabs
    (centaur-tabs-unselected :background bg-alt :foreground base4)
    ;;;; swiper
@@ -517,13 +522,6 @@ determine the exact padding."
    ((outline-1 &override) :foreground red)
    ((outline-2 &override) :foreground orange)
    (org-ellipsis :underline nil :background bg     :foreground red)
-   ((org-block-begin-line &override)
-    :background fw-orange-blend
-    :foreground fw-orange-text
-    :weight 'semi-bold)
-   ((org-block &override)
-    :background fw-orange-blend
-    :foreground fw-orange-text)
    ((org-quote &override)
     :background fw-orange-blend
     :foreground fw-orange-text)

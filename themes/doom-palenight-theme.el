@@ -104,6 +104,10 @@ Can be an integer to determine the exact padding."
     :box (if -modeline-pad `(:line-width ,-modeline-pad :color ,modeline-bg-alt)))
    (tooltip :background (doom-darken bg-alt 0.2) :foreground fg)
 
+   ;; Joe additions
+   (highlight :background base3)
+   (markdown-code-face :background base2)
+
    ;;;; css-mode <built-in> / scss-mode
    (css-proprietary-property :foreground orange)
    (css-property             :foreground green)
