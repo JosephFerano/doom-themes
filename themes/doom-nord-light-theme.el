@@ -176,6 +176,7 @@ determine the exact padding."
    (nav-flash-face :background region :foreground base8 :weight 'bold)
    ;;;; org <built-in>
    (org-hide :foreground hidden)
+   (org-block :background base2)
    ;;;; solaire-mode
    (solaire-mode-line-face
     :inherit 'mode-line
