@@ -163,8 +163,7 @@ determine the exact padding."
    ((font-lock-doc-face &override) :slant 'italic)
    (font-lock-type-face :inherit 'default)
    (font-lock-variable-name-face
-    :foreground (if -no-highlight-variables fg fw-blue-text)
-    :background (if -no-highlight-variables bg fw-blue-blend))
+    :foreground (if -no-highlight-variables fg fw-blue-text-sec))
    (font-lock-warning-face              :background fw-red-blend
                                         :foreground fw-red-text)
    (font-lock-negation-char-face        :inherit 'default)
@@ -172,14 +171,14 @@ determine the exact padding."
    (font-lock-preprocessor-char-face    :inherit 'default)
    (font-lock-regexp-grouping-backslash :inherit 'default)
    (font-lock-regexp-grouping-construct :inherit 'default)
-   (font-lock-constant-face             :background fw-teal-blend
-                                        :foreground fw-teal-text)
+   (font-lock-constant-face
+                                        :foreground fw-teal-text-sec)
    (font-lock-function-name-face        :foreground fg
                                         :weight 'semi-bold)
-   (font-lock-keyword-face              :background fw-purple-blend
-                                        :foreground fw-purple-text)
-   (font-lock-string-face               :background fw-green-blend
-                                        :foreground fw-green-text )
+   (font-lock-keyword-face
+                                        :foreground fw-purple-text-sec)
+   (font-lock-string-face
+                                        :foreground fw-green-text-sec )
 
    (lazy-highlight :background fw--light-accent
                    :foreground fw-blue-text
